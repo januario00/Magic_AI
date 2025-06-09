@@ -1,0 +1,53 @@
+/* o arquivo responsivo serve para se adaptar ao tamanho de tela , indepententemente do tamanho do dispositivo */
+
+@media (max-width: 1024px) {
+   /* é uma media query no CSS, usada pra aplicar estilos somente quando a largura da tela for menor ou igual a 1024 pixels — geralmente tablets na horizontal ou laptops com telas menores. */
+
+   .container{
+      padding: 20px;
+      /* adiciona um padding de 20px nas laterais do container */
+    }
+    .container h1 {
+        text-align: center;
+    }
+    .container .filtros {
+        background-color: aliceblue;
+        display: flex ;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        /* adiciona um espaçamento de 20px entre os filtros */
+    }
+
+    
+
+    .container .filtros .categoria-cartas, .container .filtros .preco-cartas, .container .filtros .botao-filtrar .container.filtros .botao-limpar {
+
+        width: 65%;
+        /* faz com que os filtros ocupem toda a largura do container */
+    }
+
+    /* alinhar um filho */
+    .container .filtros .botao-filtrar{
+
+        align-self: center;
+    }
+    .container .filtros .botao-limpar{
+
+        align-self: center;
+    }
+    .container .cartas{
+        justify-content: center;   
+        /* centraliza as cartas dentro do container */
+    }
+@media (max-width: 480px) {
+    /* é uma media query no CSS, usada pra aplicar estilos somente quando a largura da tela for menor ou igual a 480px — geralmente tablets na vertical ou smartphones. */
+
+    .container .filtros .categoria-cartas,
+    .container .filtros .preco-cartas, .container .filtros .botao-filtrar {
+        width: 100%;
+        /* faz com que os filtros ocupem toda a largura do container */
+    }
+    
+}
+    }

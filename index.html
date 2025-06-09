@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amizade Magic</title>  <!-- alterar titulo de pagina -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">   
+        <!-- estilo de letra do site -->
+
+        <link rel="stylesheet" href="./src/css/reset.css"> 
+        <link rel="stylesheet" href="./src/css/estilos.css">
+        <link rel="stylesheet" href="./src/css/responsivo.css">
+        
+</head>
+
+
+<body>
+    <header class="cabecalho">
+        <img src="./src/imagens/logo.png" alt="Logo Magic IA">
+    </header>
+    <main class="container">
+        <h1 class="produtos"> Produtos</h1>
+        <div class="filtros">
+            <div class="categoria-cartas">
+                <label for="categoria">Categoria</label>
+                <select id="categoria" class="categoria">
+
+                    <option value="">Selecione uma carta</option>
+                    <option value="comum">comum</option>
+                    <option value="rara">rara</option>
+                    <option value="epica">Épica</option>
+                </select>
+            </div>
+            <div class="preco-cartas">
+                <label for="preco">Preço Máximo (R$)</label>
+                <input type="text" id="preco" class="preco" placeholder="Ex: R$ 0,00">
+            </div>
+
+            <div>
+            <button class="botao-filtrar"> Filtrar </button>
+            <button class="botao-limpar"> Limpar </button>
+
+
+
+
+            </div>
+        </div>
+        <ul class="cartas">
+            <li class="carta" data-categoria="epica" data-preco="100">
+                <img src="./src/imagens/italo-pegador.png" alt="Mago Humano">
+                <div class="informacoes">
+                    <h2 class="nome-personagem"> O TI </h2>
+                    <span class="categoria"> Categoria :Épica</span>
+                    <span class="preco"> R$ 100,00 </span>
+                    <button class="botao-comprar"> Comprar</button>
+                    <a href="https://wa.me/553199999999?text=Olá , quero comprar a carta Tecedor de Codigos!" class="botao-comprar" target="_blank">Comprar></a>
+                    
+                </div>
+
+            </li>
+            <li class="carta" data-categoria="epica" data-preco="5000">
+                <img src="./src/imagens/sol-dani.png" alt="Felino Assasino">
+                <div class="informacoes">
+                    <h2 class="nome-personagem"> Solzinho </h2>
+                    <span class="categoria"> Categoria :Épica</span>
+                    <span class="preco"> R$ 5.000,00 </span>
+                    <button class="botao-comprar"> Comprar</button>
+                    <a href="https://wa.me/553199999999?text=Olá , quero comprar a carta Caçador Noturno!" class="botao-comprar" target="_blank">Comprar></a>
+                </div>
+            </li>
+            <li class="carta" data-categoria="rara" data-preco="25000">
+                <img src="./src/imagens/arquiteto-leandro.png" alt="Bruxo">
+                <div class="informacoes">
+                    <h2 class="nome-personagem"> Cavalgada do Amor </h2>
+                    <span class="categoria"> Categoria :Rara</span>
+                    <span class="preco"> R$ 25.000,00 </span>
+                    <button class="botao-comprar"> Comprar</button>
+                    <a href="https://wa.me/553199999999?text=Olá , quero comprar a carta Arquiteto das Sombras!" class="botao-comprar" target="_blank">Comprar></a>
+                </div>
+            </li>
+            <li class="carta" data-categoria="epica" data-preco="3000">
+                <img src="./src/imagens/a-gata.png" alt="Elfa Artelice">
+                <div class="informacoes">
+                    <h2 class="nome-personagem"> A gata </h2>
+                    <span class="categoria"> Categoria :Épica</span>
+                    <span class="preco"> R$ 3.000,00 </span>
+                    <button class="botao-comprar"> Comprar</button>
+                    <a href="https://wa.me/553199999999?text=Olá , quero comprar a carta Oraculo Cibernetico!" class="botao-comprar" target="_blank">Comprar></a>
+                </div>
+            </li>
+            <li class="carta" data-categoria="comum" data-preco="1000">
+                <img src="./src/imagens/fases.png" alt="Dragao">
+                <div class="informacoes">
+                    <h2 class="nome-personagem"> Izael </h2>
+                    <span class="categoria"> Categoria:Comum</span>
+                    <span class="preco"> R$ 1.000,00 </span>
+                    <button class="botao-comprar"> Comprar</button>
+                    <a href="https://wa.me/553199999999?text=Olá , quero comprar a carta Dragão Lendario!" class="botao-comprar" target="_blank">Comprar></a>
+                </div>
+                </li>
+            <li class="carta" data-categoria="comum" data-preco="5000">
+                <img src="./src/imagens/gorozeira.png" alt="Lamina Eterea">
+                <div class="informacoes">
+                    <h2 class="nome-personagem"> Kamila </h2>
+                    <span class="categoria"> Categoria:Comum</span>
+                    <span class="preco"> R$ 5.000,00 </span>
+                    <button class="botao-comprar"> Comprar</button>
+                    <a href="https://wa.me/553199999999?text=Olá , quero comprar a carta Elfo Guerreiro!" class="botao-comprar" target="_blank">Comprar></a>
+                </div>
+            </li>
+        </ul>
+
+
+    </main>
+
+
+
+    <footer class="rodape">@2025 -  Todos os Direitos Reservados </footer>
+    <script src="./src/js/index.js"></script>
+</body>
+
+</html>

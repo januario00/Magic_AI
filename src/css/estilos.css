@@ -1,0 +1,235 @@
+body {
+
+    font-family: "roboto", sans-serif;
+    background-image: url(../imagens/fundo-lilas-textura-horizontal-com-glitter-brilhante_522680-193.avif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+    padding: 20px;
+}
+
+.cabecalho {
+    background-color: #221431;
+    display: flex;
+    /* serve para usarmos com flexibilidade todos os elementos dentro do cabecalho */
+    justify-content: center;
+    /* centraliza os elementos dentro do cabecalho */
+    padding: 10px;
+    margin-bottom: 60px;
+}
+
+.container {
+    background-color: #bdaccc;
+    max-width: 1200px;
+    /* largura maxima do container */
+    margin: 0 auto;
+    /* centraliza o container */
+    text-transform: capitalize;
+}
+
+.container .produtos {
+
+    background-color: #bdaccc;
+    color: #221431;
+    font-size: 24px;
+    font-weight: 500px;
+    margin-bottom: 32px;
+    line-height: 32px;
+    letter-spacing: 2px;
+}
+
+.container .filtros {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+    /* permite que os filtros se ajustem em várias linhas se necessário */
+    margin-bottom: 32px;
+    gap: 32px;
+    /* espaçamento entre os filtros */
+    
+    
+
+}
+
+.container .categoria-cartas,
+.container .preco-cartas {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    /* largura de cada filtro */
+}
+
+.container label {
+    letter-spacing: 2px;
+    font-weight: 500;
+    color: #5b12aa;
+
+}
+
+.container .categoria-cartas select,
+.container .preco-cartas input {
+
+
+    padding: 16px 13px;
+    border-radius: 2px;
+    border: 1px solid #221431;
+    margin-top: 8px;
+    background-color: #f0ebf7;
+    height: 52px;
+}
+
+.container .categoria-cartas select :focus,
+.container .preco-cartas input :focus,
+.container .categoria-cartas select :focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 2px #d7d5da;
+    /* sombra ao redor do elemento quando em foco */
+    
+}
+
+.container select.categoria{
+    appearance: none;
+    /* remove o estilo padrão do select */
+    background: url(../imagens/seta-para-baixo.png) 97% center no-repeat;
+    /* quando quiser voltar a pasta digitar ../ */
+    background-color: #f0ebf7;
+    text-transform: capitalize;
+}
+.container .filtros .botao-filtrar{
+    border: none;
+    background-color: #221431;
+    color: #f0ebf7;
+    padding: 16px 32px;
+    font-weight: 500;
+    align-self: end;
+    /* alinha o botão ao final do container */
+    width: 177px;
+    height: 52px;
+    cursor: pointer;
+    /* cursor de ponteiro ao passar o mouse */
+    letter-spacing: 2px;
+    transition: 0.3s;
+}
+.container .filtros .botao-filtrar:hover {
+    background-color: #757277;
+    /* muda a cor do botão ao passar o mouse */
+}
+
+.container .filtros .botao-limpar{
+    border: none;
+    background-color: #221431;
+    color: #f0ebf7;
+    padding: 16px 32px;
+    font-weight: 500;
+    align-self: end;
+    /* alinha o botão ao final do container */
+    width: 177px;
+    height: 52px;
+    cursor: pointer;
+    /* cursor de ponteiro ao passar o mouse */
+    letter-spacing: 2px;
+    transition: 0.3s;
+    margin-top: 20px;
+}
+
+.container .filtros .botao-limpar:hover {
+    background-color: #757277;
+    /* muda a cor do botão ao passar o mouse */
+}
+
+
+.container .cartas{
+    background-color: #d2b7ee;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    margin-top: 32px;
+    justify-content: center;
+    
+
+
+}
+.container .cartas .carta {
+    max-width: 278px;
+    border-radius: 20px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    background-color: #998aaf;
+    color: #221431;
+}
+
+.container .cartas .carta img {
+    width: 100%;
+    padding: 20px;
+    
+}
+
+.container .carta .informacoes{
+
+    background-color: #f0eef3;
+    /* cor de fundo da parte de informações da carta */
+    display: flex;
+    flex-direction: column;
+    padding:20px;
+    gap: 10px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    
+}
+
+.container .carta .informacoes .nome-personagem {
+    font-size: 24px;
+    font-weight: 700;
+    color: #221431;
+}
+
+.container .carta .informacoes .categoria {
+    font-weight: 700px;
+    color: #221431;
+    justify-content: center;
+
+}
+.container .carta .informacoes .preco {
+    font-size: 24px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    color: #0d9249;
+}
+
+.container .carta .informacoes .botao-comprar {
+
+
+    background-color: #6e07db;
+    color: #221431;
+    padding: 16px;
+    border-radius : 4px;
+    letter-spacing : 2px;
+    transition: 0.3s;
+    text-align: center;
+    text-decoration:none;
+}
+
+.container .carta .informacoes .botao-comprar:hover {
+    background-color: #1c0b2e;
+    color: #f0ebf7;
+    /* muda a cor do botão ao passar o mouse */
+}
+
+
+.rodape{
+
+    background-color: blueviolet;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    color: #f0ebf7;
+    margin-top: 60px;
+}
+
+.esconder {
+    display: none;
+}
+.mostrar {
+    display: block;
+}   
